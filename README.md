@@ -22,7 +22,11 @@ php bin/console doctrine:migrations:migrate
 ##Methods:
 
 GET <hostname>/classroom -- all active classrooms
+ 
 GET <hostname>/classroom/<id> -- classroom by id
+
 POST <hostname>/classroom/add params(string name, int is_active{1|0}) -- add classroom
+
 PUT <hostname>/classroom/update/<id> params(string name, int is_active{1|0}) -- update classroom
+
 DELETE <hostname>/classroom/remove/<id> -- remove classroom
